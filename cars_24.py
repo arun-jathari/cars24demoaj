@@ -1,5 +1,5 @@
 import streamlit as st
-import pandas as pd
+# import pandas as pd
 import pickle
 
 
@@ -31,7 +31,7 @@ with col4:
     seats = st.selectbox("Seats", [2, 4, 5, 6, 7, 8, 9, 10])
 
 
-model = pickle.load(open(".\case studies\streamlit\dsml-mlops-streamlit-jan05-main\cars_24.pkl", "rb"))
+model = pickle.load(open("cars_24.pkl", "rb"))
 
 
 # with open("car_pred", "rb") as f:
